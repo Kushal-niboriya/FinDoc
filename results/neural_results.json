@@ -1,0 +1,265 @@
+{
+  "models": {
+    "FastText EmbeddingBag": {
+      "model_name": "FastText EmbeddingBag",
+      "parameters": 2389860,
+      "train_time_sec": 18.97,
+      "peak_vram_mb": 61.91,
+      "latency_ms_per_sample": 0.015,
+      "val_macro_f1": 0.7276,
+      "test_metrics": {
+        "macro_f1": 0.7333,
+        "micro_f1": 0.8198,
+        "accuracy": 0.8198,
+        "tier_f1": {
+          "head_f1": 0.8795,
+          "mid_f1": 0.771,
+          "tail_f1": 0.6631
+        }
+      }
+    },
+    "TextCNN": {
+      "model_name": "TextCNN (1D Multi-Filter)",
+      "parameters": 2612452,
+      "train_time_sec": 32.09,
+      "peak_vram_mb": 92.48,
+      "latency_ms_per_sample": 0.03,
+      "val_macro_f1": 0.747,
+      "test_metrics": {
+        "macro_f1": 0.7543,
+        "micro_f1": 0.8353,
+        "accuracy": 0.8353,
+        "tier_f1": {
+          "head_f1": 0.8899,
+          "mid_f1": 0.7981,
+          "tail_f1": 0.683
+        }
+      }
+    },
+    "Frozen SBERT (MiniLM) + LR": {
+      "model_name": "Frozen SBERT (all-MiniLM-L6-v2) + LogisticRegression",
+      "parameters": 22713216,
+      "embedding_dim": 384,
+      "train_time_sec": 62.74,
+      "encoding_time_sec": 43.84,
+      "fit_time_sec": 18.91,
+      "peak_vram_mb": 366.27,
+      "latency_ms_per_sample": 0.527,
+      "val_macro_f1": 0.6937,
+      "test_metrics": {
+        "macro_f1": 0.7052,
+        "micro_f1": 0.8066,
+        "accuracy": 0.8066,
+        "tier_f1": {
+          "head_f1": 0.8671,
+          "mid_f1": 0.7536,
+          "tail_f1": 0.6228
+        }
+      }
+    },
+    "DistilBERT (Fine-Tuned)": {
+      "model_name": "DistilBERT (Fine-Tuned, 3 Epochs, fp16)",
+      "parameters": 67030372,
+      "max_len": 128,
+      "batch_size": 16,
+      "train_time_sec": 1381.88,
+      "train_time_min": 23.03,
+      "peak_vram_allocated_gb": 1.29,
+      "peak_vram_reserved_gb": 1.44,
+      "latency_ms_per_sample": 3.602,
+      "epoch_logs": [
+        {
+          "epoch": 1,
+          "train_loss": 1.5951,
+          "val_loss": 0.6625,
+          "val_macro_f1": 0.6969,
+          "val_acc": 0.8202,
+          "epoch_time_sec": 436.56
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.5623,
+          "val_loss": 0.5734,
+          "val_macro_f1": 0.7523,
+          "val_acc": 0.848,
+          "epoch_time_sec": 441.41
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.3968,
+          "val_loss": 0.5373,
+          "val_macro_f1": 0.7725,
+          "val_acc": 0.8596,
+          "epoch_time_sec": 450.49
+        }
+      ],
+      "best_val_macro_f1": 0.7725,
+      "test_metrics": {
+        "macro_f1": 0.771,
+        "micro_f1": 0.8596,
+        "accuracy": 0.8596,
+        "tier_f1": {
+          "head_f1": 0.912,
+          "mid_f1": 0.8298,
+          "tail_f1": 0.6876
+        }
+      },
+      "per_class_f1": {
+        "Adjustments": 0.905,
+        "Agreements": 0.5455,
+        "Amendments": 0.8638,
+        "Anti-Corruption Laws": 0.9787,
+        "Applicable Laws": 0.0357,
+        "Approvals": 0.5,
+        "Arbitration": 0.9388,
+        "Assignments": 0.8636,
+        "Assigns": 0.0,
+        "Authority": 0.5965,
+        "Authorizations": 0.7541,
+        "Base Salary": 0.973,
+        "Benefits": 0.8054,
+        "Binding Effects": 0.7097,
+        "Books": 0.0,
+        "Brokers": 0.9859,
+        "Capitalization": 0.9524,
+        "Change In Control": 0.8913,
+        "Closings": 0.9846,
+        "Compliance With Laws": 0.9324,
+        "Confidentiality": 0.928,
+        "Consent To Jurisdiction": 0.6349,
+        "Consents": 0.7758,
+        "Construction": 0.6875,
+        "Cooperation": 0.8718,
+        "Costs": 0.5,
+        "Counterparts": 0.9869,
+        "Death": 0.8923,
+        "Defined Terms": 0.5893,
+        "Definitions": 0.7603,
+        "Disability": 0.8454,
+        "Disclosures": 0.9005,
+        "Duties": 0.8649,
+        "Effective Dates": 0.8497,
+        "Effectiveness": 0.6129,
+        "Employment": 0.7273,
+        "Enforceability": 0.5867,
+        "Enforcements": 0.4923,
+        "Entire Agreements": 0.9202,
+        "Erisa": 0.9831,
+        "Existence": 0.9091,
+        "Expenses": 0.8962,
+        "Fees": 0.8304,
+        "Financial Statements": 0.9816,
+        "Forfeitures": 0.8654,
+        "Further Assurances": 0.9443,
+        "General": 0.577,
+        "Governing Laws": 0.934,
+        "Headings": 0.9821,
+        "Indemnifications": 0.9097,
+        "Indemnity": 0.5581,
+        "Insurances": 0.9562,
+        "Integration": 0.6067,
+        "Intellectual Property": 0.9048,
+        "Interests": 0.8293,
+        "Interpretations": 0.6957,
+        "Jurisdictions": 0.2979,
+        "Liens": 0.8723,
+        "Litigations": 0.9498,
+        "Miscellaneous": 0.4496,
+        "Modifications": 0.5747,
+        "No Conflicts": 0.9065,
+        "No Defaults": 0.918,
+        "No Waivers": 0.7399,
+        "Non-Disparagement": 0.9892,
+        "Notices": 0.9657,
+        "Organizations": 0.8889,
+        "Participations": 0.9517,
+        "Payments": 0.7357,
+        "Positions": 0.6133,
+        "Powers": 0.3871,
+        "Publicity": 0.9286,
+        "Qualifications": 0.0,
+        "Records": 0.9394,
+        "Releases": 0.8667,
+        "Remedies": 0.8249,
+        "Representations": 0.7273,
+        "Sales": 0.7778,
+        "Sanctions": 0.7586,
+        "Severability": 0.9597,
+        "Solvency": 0.9767,
+        "Specific Performance": 0.6582,
+        "Submission To Jurisdiction": 0.5625,
+        "Subsidiaries": 0.9291,
+        "Successors": 0.6627,
+        "Survival": 0.9458,
+        "Tax Withholdings": 0.6187,
+        "Taxes": 0.8451,
+        "Terminations": 0.8051,
+        "Terms": 0.8597,
+        "Titles": 0.6923,
+        "Transactions With Affiliates": 0.9783,
+        "Use Of Proceeds": 0.9705,
+        "Vacations": 0.9808,
+        "Venues": 0.5,
+        "Vesting": 0.8877,
+        "Waiver Of Jury Trials": 0.9776,
+        "Waivers": 0.8171,
+        "Warranties": 0.6994,
+        "Withholdings": 0.7059
+      }
+    }
+  },
+  "imbalance_ablation": [
+    {
+      "strategy": "1. Unweighted Cross-Entropy",
+      "val_macro_f1": 0.6314,
+      "test_macro_f1": 0.6384,
+      "test_micro_f1": 0.771,
+      "test_accuracy": 0.771,
+      "tier_f1": {
+        "head_f1": 0.8427,
+        "mid_f1": 0.7008,
+        "tail_f1": 0.5334
+      },
+      "fit_time_sec": 8.64
+    },
+    {
+      "strategy": "2. Balanced Class Weights",
+      "val_macro_f1": 0.657,
+      "test_macro_f1": 0.6685,
+      "test_micro_f1": 0.7461,
+      "test_accuracy": 0.7461,
+      "tier_f1": {
+        "head_f1": 0.8312,
+        "mid_f1": 0.7014,
+        "tail_f1": 0.5968
+      },
+      "fit_time_sec": 8.88
+    },
+    {
+      "strategy": "3. Focal Loss (gamma=2.0)",
+      "val_macro_f1": 0.6514,
+      "test_macro_f1": 0.6589,
+      "test_micro_f1": 0.7758,
+      "test_accuracy": 0.7758,
+      "tier_f1": {
+        "head_f1": 0.8495,
+        "mid_f1": 0.7112,
+        "tail_f1": 0.5651
+      },
+      "fit_time_sec": 10.24
+    },
+    {
+      "strategy": "4. Focal Loss + Class Weights",
+      "val_macro_f1": 0.6297,
+      "test_macro_f1": 0.6372,
+      "test_micro_f1": 0.6691,
+      "test_accuracy": 0.6691,
+      "tier_f1": {
+        "head_f1": 0.7178,
+        "mid_f1": 0.6947,
+        "tail_f1": 0.5727
+      },
+      "fit_time_sec": 10.43
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "total_clauses": 6,
+  "confident_clauses": 6,
+  "uncertain_clauses": 0,
+  "confidence_threshold_used": 0.5,
+  "contract_entities": {
+    "amounts": [
+      "$325,000"
+    ],
+    "dates": [
+      "January 1, 2024"
+    ],
+    "durations": [
+      "four (24) months",
+      "sixty (60) days",
+      "six (36) months"
+    ],
+    "parties": [
+      "Performance Bonus",
+      "Non-Disparagement"
+    ]
+  },
+  "clauses": [
+    {
+      "clause_id": 1,
+      "header": "Section 1.",
+      "text": "Section 1. Position, Duties, and Responsibilities.\nDuring the Employment Period, the Executive shall serve as Chief Scientific Officer of the Company and shall perform such executive duties and responsibilities as are customary for such position, reporting directly to the Chief Executive Officer.",
+      "analysis": {
+        "top_label": "Positions",
+        "confidence": 0.702,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Positions",
+            "confidence": 0.702,
+            "confidence_pct": 70.2
+          },
+          {
+            "label": "Duties",
+            "confidence": 0.2684,
+            "confidence_pct": 26.84
+          },
+          {
+            "label": "Titles",
+            "confidence": 0.0101,
+            "confidence_pct": 1.01
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [],
+          "parties": []
+        },
+        "similar_clauses": [
+          {
+            "score": 0.4327,
+            "category": "Duties",
+            "text_snippet": "(a) During the Term, Executive agrees to be employed and devote substantially all of Executive\u2019s business time and efforts to the Company an..."
+          },
+          {
+            "score": 0.4291,
+            "category": "Duties",
+            "text_snippet": "During the Employment Period the Executive shall serve as the Executive Vice Chairman of the Company and as a member of the Board of Directo..."
+          },
+          {
+            "score": 0.4219,
+            "category": "Positions",
+            "text_snippet": "The Executive shall be employed as the Chief Executive Officer of the Company and the Bank and, subject to the direction of the Board of Dir..."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 2,
+      "header": "Section 2.",
+      "text": "Section 2. Base Salary and Performance Bonus.\nThe Company shall pay the Executive an initial annual base salary of $325,000, payable in accordance with the Company\u2019s regular payroll practices. The Executive shall also be eligible to receive an annual discretionary performance bonus with a target amount equal to 40% of the Base Salary.",
+      "analysis": {
+        "top_label": "Base Salary",
+        "confidence": 0.993,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Base Salary",
+            "confidence": 0.993,
+            "confidence_pct": 99.3
+          },
+          {
+            "label": "Benefits",
+            "confidence": 0.0033,
+            "confidence_pct": 0.33
+          },
+          {
+            "label": "Payments",
+            "confidence": 0.0014,
+            "confidence_pct": 0.14
+          }
+        ],
+        "entities": {
+          "amounts": [
+            "$325,000"
+          ],
+          "dates": [],
+          "durations": [],
+          "parties": [
+            "Performance Bonus"
+          ]
+        },
+        "similar_clauses": [
+          {
+            "score": 0.4401,
+            "category": "Base Salary",
+            "text_snippet": "During the Term, the Company shall pay to the Executive for the performance of his duties under this Agreement an annual base salary of $915..."
+          },
+          {
+            "score": 0.4286,
+            "category": "Base Salary",
+            "text_snippet": "The Company shall pay to the Executive for the performance of his duties under this Agreement an initial base salary of $ 350,000 U.S. dolla..."
+          },
+          {
+            "score": 0.4102,
+            "category": "Base Salary",
+            "text_snippet": "The Company shall pay to Executive an annual base salary of $350,000 per year (the \u201c Base Salary \u201d), payable in accordance with the Company\u2019..."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 3,
+      "header": "Section 3.",
+      "text": "Section 3. Term and Termination.\nThe initial term of employment shall commence on January 1, 2024, and continue for a period of twenty-four (24) months. Either party may terminate this Agreement without cause upon sixty (60) days prior written notice to the other party.",
+      "analysis": {
+        "top_label": "Terms",
+        "confidence": 0.9524,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Terms",
+            "confidence": 0.9524,
+            "confidence_pct": 95.24
+          },
+          {
+            "label": "Terminations",
+            "confidence": 0.0348,
+            "confidence_pct": 3.48
+          },
+          {
+            "label": "General",
+            "confidence": 0.0035,
+            "confidence_pct": 0.35
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [
+            "January 1, 2024"
+          ],
+          "durations": [
+            "four (24) months",
+            "sixty (60) days"
+          ],
+          "parties": []
+        },
+        "similar_clauses": [
+          {
+            "score": 0.3096,
+            "category": "Terms",
+            "text_snippet": "The term of this Agreement shall commence on the Closing Date and continue for a period of seven (7) years thereafter (the \u201c Term \u201d)."
+          },
+          {
+            "score": 0.2589,
+            "category": "Terms",
+            "text_snippet": "The term (\"Term\") of th is Agreement shall commence on the date hereof and continue until such time as a party hereto notifies the other par..."
+          },
+          {
+            "score": 0.2515,
+            "category": "Employment",
+            "text_snippet": "The Company shall employ the Executive as its Senior Vice President of Homebuilding and Development/President - East Region, and the Executi..."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 4,
+      "header": "Section 4.",
+      "text": "Section 4. Non-Disparagement.\nThe Executive agrees that during the term of employment and for thirty-six (36) months thereafter, the Executive shall not make, publish, or communicate to any person or entity any defamatory, disparaging, or negative statements regarding the Company, its products, or its management.",
+      "analysis": {
+        "top_label": "Non-Disparagement",
+        "confidence": 0.9884,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Non-Disparagement",
+            "confidence": 0.9884,
+            "confidence_pct": 98.84
+          },
+          {
+            "label": "Confidentiality",
+            "confidence": 0.001,
+            "confidence_pct": 0.1
+          },
+          {
+            "label": "General",
+            "confidence": 0.0009,
+            "confidence_pct": 0.09
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [
+            "six (36) months"
+          ],
+          "parties": [
+            "Non-Disparagement"
+          ]
+        },
+        "similar_clauses": [
+          {
+            "score": 0.3824,
+            "category": "Non-Disparagement",
+            "text_snippet": "The Executive agrees and covenants that he will not at any time make, publish or communicate to any person or entity or in any public forum ..."
+          },
+          {
+            "score": 0.3524,
+            "category": "Non-Disparagement",
+            "text_snippet": "Executive agrees and covenants that Executive will not at any time make, publish or communicate to any person or entity or in any public for..."
+          },
+          {
+            "score": 0.3326,
+            "category": "Non-Disparagement",
+            "text_snippet": "The Executive agrees and covenants that he will not at any time make, publish or communicate to any person or entity or in any public forum ..."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 5,
+      "header": "Section 5.",
+      "text": "Section 5. Severability of Provisions.\nIn the event that any provision of this Agreement is held to be invalid, illegal, or unenforceable in any jurisdiction, such invalidity shall not affect any other provision of this Agreement, and this Agreement shall be reformed and construed as if such invalid provision had never been contained herein.",
+      "analysis": {
+        "top_label": "Severability",
+        "confidence": 0.9945,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Severability",
+            "confidence": 0.9945,
+            "confidence_pct": 99.45
+          },
+          {
+            "label": "Miscellaneous",
+            "confidence": 0.0036,
+            "confidence_pct": 0.36
+          },
+          {
+            "label": "Interpretations",
+            "confidence": 0.0004,
+            "confidence_pct": 0.04
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [],
+          "parties": []
+        },
+        "similar_clauses": [
+          {
+            "score": 0.6321,
+            "category": "Severability",
+            "text_snippet": "If any provision of this Separation Agreement is held to be invalid, illegal or unenforceable in any respect under any applicable law or rul..."
+          },
+          {
+            "score": 0.5876,
+            "category": "Severability",
+            "text_snippet": "Whenever possible, each provision of this Agreement will be interpreted in such manner as to be effective and valid under applicable law, bu..."
+          },
+          {
+            "score": 0.577,
+            "category": "Severability",
+            "text_snippet": "In the event one or more of the provisions of this Option Agreement should, for any reason, be held to be invalid, illegal or unenforceable ..."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 6,
+      "header": "Section 6.",
+      "text": "Section 6. Governing Law.\nThis Agreement shall be construed, interpreted, and governed by the laws of the State of California, without giving effect to any conflict of law principles that would result in the application of the laws of any other jurisdiction.",
+      "analysis": {
+        "top_label": "Governing Laws",
+        "confidence": 0.7319,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Governing Laws",
+            "confidence": 0.7319,
+            "confidence_pct": 73.19
+          },
+          {
+            "label": "Applicable Laws",
+            "confidence": 0.2653,
+            "confidence_pct": 26.53
+          },
+          {
+            "label": "Miscellaneous",
+            "confidence": 0.0007,
+            "confidence_pct": 0.07
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [],
+          "parties": []
+        },
+        "similar_clauses": [
+          {
+            "score": 0.5327,
+            "category": "Applicable Laws",
+            "text_snippet": "The Plan shall be construed, interpreted and the rights of the parties determined in accordance with the laws of the State of Delaware (with..."
+          },
+          {
+            "score": 0.4978,
+            "category": "Applicable Laws",
+            "text_snippet": "THIS BRIDGE NOTE WILL BE GOVERNED BY AND INTERPRETED AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF THE STATE OF NEW YORK WITHOUT GIVING EFFEC..."
+          },
+          {
+            "score": 0.4779,
+            "category": "Governing Laws",
+            "text_snippet": "This Amendment shall be governed by and construed in accordance with the domestic Laws of, and enforced in, the State of California without ..."
+          }
+        ]
+      }
+    }
+  ]
+}

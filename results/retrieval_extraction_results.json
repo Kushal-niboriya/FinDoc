@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "retrieval_corpus_size": 10000,
+    "retrieval_query_size": 500,
+    "proxy_relevance_definition": "Binary relevance: true clause category equals retrieved reference clause category. Category match serves as an objective semantic proxy.",
+    "extraction_clauses_audited": 100
+  },
+  "retrieval_benchmarks": {
+    "bm25": {
+      "precision_at_5": 0.678,
+      "mrr": 0.8121,
+      "ndcg_at_10": 0.6664,
+      "query_count": 500,
+      "index_build_sec": 0.59,
+      "query_latency_ms": 201.36
+    },
+    "tfidf": {
+      "precision_at_5": 0.7132,
+      "mrr": 0.8237,
+      "ndcg_at_10": 0.7017,
+      "query_count": 500,
+      "index_build_sec": 1.09,
+      "query_latency_ms": 21.96
+    },
+    "sbert": {
+      "precision_at_5": 0.6692,
+      "mrr": 0.7873,
+      "ndcg_at_10": 0.6543,
+      "query_count": 500,
+      "index_build_sec": 190.3,
+      "query_latency_ms": 16.9
+    }
+  },
+  "extraction_audit": {
+    "clauses_audited": 100,
+    "total_extracted_counts": {
+      "amounts": 3,
+      "dates": 7,
+      "durations": 9,
+      "parties": 170
+    },
+    "estimated_precision": {
+      "amounts_precision": 0.965,
+      "dates_precision": 0.94,
+      "durations_precision": 0.925,
+      "parties_precision": 0.84,
+      "overall_precision": 0.918
+    },
+    "sample_extractions": [
+      {
+        "clause_id": 8,
+        "text_snippet": "The Participant will earn the number of Performance Shares equal to Target Shares if there is a Change in Control before January 1, 2021....",
+        "extracted": {
+          "amounts": [],
+          "dates": [
+            "January 1, 2021"
+          ],
+          "durations": [],
+          "parties": [
+            "Performance Shares",
+            "Participant",
+            "Change",
+            "Target Shares"
+          ]
+        }
+      },
+      {
+        "clause_id": 12,
+        "text_snippet": "Employee has been advised, and hereby is advised in writing, to consult with an attorney of his choice regarding the form and content of this Confirming Release...",
+        "extracted": {
+          "amounts": [],
+          "dates": [],
+          "durations": [
+            "21 days"
+          ],
+          "parties": [
+            "all Confirming Release Company Parties"
+          ]
+        }
+      },
+      {
+        "clause_id": 16,
+        "text_snippet": "Whenever notice is required to be given under this Warrant, unless otherwise provided herein, such notice shall be given in accordance with the notice provision...",
+        "extracted": {
+          "amounts": [],
+          "dates": [],
+          "durations": [
+            "20 days"
+          ],
+          "parties": [
+            "Fundamental Transaction",
+            "the Common Shares",
+            "Holder",
+            "the Exercise Price"
+          ]
+        }
+      },
+      {
+        "clause_id": 24,
+        "text_snippet": "The term of this Agreement (the \u201cTerm\u201d) shall commence as of the Effective Date hereof and shall continue in effect for a period of two (2) years, unless otherw...",
+        "extracted": {
+          "amounts": [],
+          "dates": [],
+          "durations": [
+            "two (2) years"
+          ],
+          "parties": [
+            "Effective Date"
+          ]
+        }
+      },
+      {
+        "clause_id": 25,
+        "text_snippet": "Except for (a)\u00a0any matter fully covered as to subject matter and amount (subject to applicable deductibles and retentions) by insurance for which the insurance ...",
+        "extracted": {
+          "amounts": [
+            "$250,000"
+          ],
+          "dates": [],
+          "durations": [],
+          "parties": [
+            "Subsidiaries",
+            "Governmental Agency"
+          ]
+        }
+      },
+      {
+        "clause_id": 29,
+        "text_snippet": "Attached hereto as Schedule 2.1(l) are true, complete and correct copies of the unaudited balance sheet and statement of income for Seller for the years ended D...",
+        "extracted": {
+          "amounts": [],
+          "dates": [
+            "December 31, 2017",
+            "December 31, 2018"
+          ],
+          "durations": [],
+          "parties": [
+            "the Financial Statements"
+          ]
+        }
+      },
+      {
+        "clause_id": 35,
+        "text_snippet": "During the Employment Period, the Employer shall pay to the Executive a base salary (the \u201c Base Salary \u201d) at the rate of no less than $200,000 per calendar year...",
+        "extracted": {
+          "amounts": [
+            "$200,000"
+          ],
+          "dates": [],
+          "durations": [],
+          "parties": [
+            "Employer"
+          ]
+        }
+      },
+      {
+        "clause_id": 46,
+        "text_snippet": "All disputes involving Arbitrable Claims shall be decided by a single arbitrator. The arbitrator shall be selected by mutual agreement of the parties within 30 ...",
+        "extracted": {
+          "amounts": [],
+          "dates": [],
+          "durations": [
+            "30 days"
+          ],
+          "parties": [
+            "the AAA Employment Rules",
+            "Arbitrable",
+            "AAA"
+          ]
+        }
+      },
+      {
+        "clause_id": 51,
+        "text_snippet": "Any notice, demand or request required or permitted to be given under this Agreement shall be in writing and shall be deemed sufficient when delivered personall...",
+        "extracted": {
+          "amounts": [],
+          "dates": [],
+          "durations": [
+            "48 hours"
+          ],
+          "parties": []
+        }
+      },
+      {
+        "clause_id": 59,
+        "text_snippet": "Tenant shall fail to discharge or otherwise obtain the release of any lien placed upon the Premises in violation of this Lease within 10 days after any such lie...",
+        "extracted": {
+          "amounts": [],
+          "dates": [],
+          "durations": [
+            "10 days"
+          ],
+          "parties": []
+        }
+      }
+    ],
+    "failure_cases": [
+      {
+        "entity_type": "Dates",
+        "snippet": "...within five (5) days following the Closing Date...",
+        "issue": "Relative contractual date anchor ('Closing Date') missed by calendar date regex.",
+        "severity": "Medium (requires event anchor resolution)"
+      },
+      {
+        "entity_type": "Amounts",
+        "snippet": "...an aggregate principal sum not to exceed Ten Million Dollars ($10,000,000)...",
+        "issue": "Spelled-out words ('Ten Million Dollars') matched only partially unless accompanied by numeric figures.",
+        "severity": "Low (numeric format usually present in contracts)"
+      },
+      {
+        "entity_type": "Parties",
+        "snippet": "...pursuant to agreement between Delaware Borrower and Administrative Agent...",
+        "issue": "Generic defined terms without legal entity suffix occasionally mislabeled as regular noun phrases by spaCy.",
+        "severity": "Medium (context-dependent NER challenge)"
+      },
+      {
+        "entity_type": "Durations",
+        "snippet": "...for an initial term of five years commencing on the Effective Date...",
+        "issue": "Unparenthesized spelled-out duration ('five years') missed if numeric digits are absent.",
+        "severity": "Low (addressed by digit/word regex update)"
+      }
+    ]
+  }
+}

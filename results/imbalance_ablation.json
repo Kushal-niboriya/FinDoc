@@ -1,0 +1,54 @@
+[
+  {
+    "strategy": "1. Unweighted Cross-Entropy",
+    "val_macro_f1": 0.6314,
+    "test_macro_f1": 0.6384,
+    "test_micro_f1": 0.771,
+    "test_accuracy": 0.771,
+    "tier_f1": {
+      "head_f1": 0.8427,
+      "mid_f1": 0.7008,
+      "tail_f1": 0.5334
+    },
+    "fit_time_sec": 8.64
+  },
+  {
+    "strategy": "2. Balanced Class Weights",
+    "val_macro_f1": 0.657,
+    "test_macro_f1": 0.6685,
+    "test_micro_f1": 0.7461,
+    "test_accuracy": 0.7461,
+    "tier_f1": {
+      "head_f1": 0.8312,
+      "mid_f1": 0.7014,
+      "tail_f1": 0.5968
+    },
+    "fit_time_sec": 8.88
+  },
+  {
+    "strategy": "3. Focal Loss (gamma=2.0)",
+    "val_macro_f1": 0.6514,
+    "test_macro_f1": 0.6589,
+    "test_micro_f1": 0.7758,
+    "test_accuracy": 0.7758,
+    "tier_f1": {
+      "head_f1": 0.8495,
+      "mid_f1": 0.7112,
+      "tail_f1": 0.5651
+    },
+    "fit_time_sec": 10.24
+  },
+  {
+    "strategy": "4. Focal Loss + Class Weights",
+    "val_macro_f1": 0.6297,
+    "test_macro_f1": 0.6372,
+    "test_micro_f1": 0.6691,
+    "test_accuracy": 0.6691,
+    "tier_f1": {
+      "head_f1": 0.7178,
+      "mid_f1": 0.6947,
+      "tail_f1": 0.5727
+    },
+    "fit_time_sec": 10.43
+  }
+]

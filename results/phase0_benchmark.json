@@ -1,0 +1,47 @@
+{
+  "hardware": {
+    "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "total_vram_gb": 4.0,
+    "initial_free_vram_gb": 3.23
+  },
+  "config": {
+    "model_name": "distilbert-base-uncased",
+    "batch_size": 16,
+    "max_len": 128,
+    "fp16": true,
+    "steps_benchmarked": 200
+  },
+  "benchmark_metrics": {
+    "elapsed_seconds": 20.14,
+    "sec_per_step": 0.1007,
+    "steps_per_sec": 9.93,
+    "peak_vram_allocated_gb": 1.29,
+    "peak_vram_reserved_gb": 1.45,
+    "safe_headroom_gb": 2.55
+  },
+  "projections": {
+    "dataset_train_size": 60000,
+    "steps_per_epoch": 3750,
+    "est_1_epoch_minutes": 6.3,
+    "est_3_epochs_minutes": 18.89,
+    "est_3_epochs_hours": 0.31,
+    "exceeds_1_hour_flag": false
+  },
+  "planned_experiments_estimates": {
+    "DistilBERT_full_3epochs_bs16": {
+      "steps": 11250,
+      "est_minutes": 18.89,
+      "flag_exceeds_1hr": false
+    },
+    "DistilBERT_subset_20k_3epochs_bs16": {
+      "steps": 3750,
+      "est_minutes": 6.3,
+      "flag_exceeds_1hr": false
+    },
+    "MiniLM_L6_full_3epochs_bs16": {
+      "steps": 11250,
+      "est_minutes": 13.22,
+      "flag_exceeds_1hr": false
+    }
+  }
+}

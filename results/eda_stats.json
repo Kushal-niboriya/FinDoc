@@ -1,0 +1,1257 @@
+{
+  "dataset_summary": {
+    "name": "LEDGAR (LexGLUE benchmark config)",
+    "source": "US SEC EDGAR corporate filings (material contracts)",
+    "splits": [
+      "train",
+      "test",
+      "validation"
+    ],
+    "split_sizes": {
+      "train": 60000,
+      "test": 10000,
+      "validation": 10000
+    },
+    "total_samples": 80000,
+    "fields": [
+      "text",
+      "label"
+    ],
+    "num_classes": 100
+  },
+  "class_imbalance": {
+    "top_1_class": "Governing Laws",
+    "top_1_count": 3167,
+    "top_100_class": "Books",
+    "top_100_count": 23,
+    "imbalance_ratio_head_to_tail": 137.7,
+    "top_10_classes_cumulative_pct": 31.48,
+    "top_20_classes_cumulative_pct": 48.33,
+    "class_rankings": [
+      {
+        "rank": 1,
+        "class_name": "Governing Laws",
+        "train_count": 3167,
+        "val_count": 494,
+        "test_count": 582,
+        "total_count": 4243,
+        "train_prop": 0.05278,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 2,
+        "class_name": "Notices",
+        "train_count": 2493,
+        "val_count": 398,
+        "test_count": 422,
+        "total_count": 3313,
+        "train_prop": 0.04155,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 3,
+        "class_name": "Counterparts",
+        "train_count": 2427,
+        "val_count": 429,
+        "test_count": 490,
+        "total_count": 3346,
+        "train_prop": 0.04045,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 4,
+        "class_name": "Entire Agreements",
+        "train_count": 2340,
+        "val_count": 389,
+        "test_count": 376,
+        "total_count": 3105,
+        "train_prop": 0.039,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 5,
+        "class_name": "Severability",
+        "train_count": 1808,
+        "val_count": 332,
+        "test_count": 412,
+        "total_count": 2552,
+        "train_prop": 0.03013,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 6,
+        "class_name": "Survival",
+        "train_count": 1469,
+        "val_count": 260,
+        "test_count": 222,
+        "total_count": 1951,
+        "train_prop": 0.02448,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 7,
+        "class_name": "Amendments",
+        "train_count": 1467,
+        "val_count": 257,
+        "test_count": 224,
+        "total_count": 1948,
+        "train_prop": 0.02445,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 8,
+        "class_name": "Assignments",
+        "train_count": 1327,
+        "val_count": 208,
+        "test_count": 195,
+        "total_count": 1730,
+        "train_prop": 0.02212,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 9,
+        "class_name": "Expenses",
+        "train_count": 1224,
+        "val_count": 170,
+        "test_count": 183,
+        "total_count": 1577,
+        "train_prop": 0.0204,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 10,
+        "class_name": "Terms",
+        "train_count": 1166,
+        "val_count": 169,
+        "test_count": 176,
+        "total_count": 1511,
+        "train_prop": 0.01943,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 11,
+        "class_name": "Terminations",
+        "train_count": 1112,
+        "val_count": 193,
+        "test_count": 118,
+        "total_count": 1423,
+        "train_prop": 0.01853,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 12,
+        "class_name": "Insurances",
+        "train_count": 1104,
+        "val_count": 204,
+        "test_count": 133,
+        "total_count": 1441,
+        "train_prop": 0.0184,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 13,
+        "class_name": "Taxes",
+        "train_count": 1089,
+        "val_count": 214,
+        "test_count": 185,
+        "total_count": 1488,
+        "train_prop": 0.01815,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 14,
+        "class_name": "Litigations",
+        "train_count": 1034,
+        "val_count": 166,
+        "test_count": 129,
+        "total_count": 1329,
+        "train_prop": 0.01723,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 15,
+        "class_name": "Confidentiality",
+        "train_count": 1012,
+        "val_count": 149,
+        "test_count": 167,
+        "total_count": 1328,
+        "train_prop": 0.01687,
+        "tier": "Head (1-15)"
+      },
+      {
+        "rank": 16,
+        "class_name": "Further Assurances",
+        "train_count": 1009,
+        "val_count": 155,
+        "test_count": 152,
+        "total_count": 1316,
+        "train_prop": 0.01682,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 17,
+        "class_name": "General",
+        "train_count": 976,
+        "val_count": 150,
+        "test_count": 203,
+        "total_count": 1329,
+        "train_prop": 0.01627,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 18,
+        "class_name": "Compliance With Laws",
+        "train_count": 960,
+        "val_count": 167,
+        "test_count": 208,
+        "total_count": 1335,
+        "train_prop": 0.016,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 19,
+        "class_name": "Indemnifications",
+        "train_count": 936,
+        "val_count": 140,
+        "test_count": 152,
+        "total_count": 1228,
+        "train_prop": 0.0156,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 20,
+        "class_name": "Waivers",
+        "train_count": 878,
+        "val_count": 155,
+        "test_count": 166,
+        "total_count": 1199,
+        "train_prop": 0.01463,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 21,
+        "class_name": "Use Of Proceeds",
+        "train_count": 866,
+        "val_count": 137,
+        "test_count": 120,
+        "total_count": 1123,
+        "train_prop": 0.01443,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 22,
+        "class_name": "Payments",
+        "train_count": 856,
+        "val_count": 175,
+        "test_count": 126,
+        "total_count": 1157,
+        "train_prop": 0.01427,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 23,
+        "class_name": "Waiver Of Jury Trials",
+        "train_count": 768,
+        "val_count": 146,
+        "test_count": 111,
+        "total_count": 1025,
+        "train_prop": 0.0128,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 24,
+        "class_name": "No Conflicts",
+        "train_count": 741,
+        "val_count": 108,
+        "test_count": 104,
+        "total_count": 953,
+        "train_prop": 0.01235,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 25,
+        "class_name": "Financial Statements",
+        "train_count": 677,
+        "val_count": 100,
+        "test_count": 82,
+        "total_count": 859,
+        "train_prop": 0.01128,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 26,
+        "class_name": "Remedies",
+        "train_count": 664,
+        "val_count": 119,
+        "test_count": 118,
+        "total_count": 901,
+        "train_prop": 0.01107,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 27,
+        "class_name": "Base Salary",
+        "train_count": 656,
+        "val_count": 114,
+        "test_count": 112,
+        "total_count": 882,
+        "train_prop": 0.01093,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 28,
+        "class_name": "Releases",
+        "train_count": 621,
+        "val_count": 91,
+        "test_count": 60,
+        "total_count": 772,
+        "train_prop": 0.01035,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 29,
+        "class_name": "Authorizations",
+        "train_count": 620,
+        "val_count": 106,
+        "test_count": 90,
+        "total_count": 816,
+        "train_prop": 0.01033,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 30,
+        "class_name": "Disclosures",
+        "train_count": 590,
+        "val_count": 104,
+        "test_count": 97,
+        "total_count": 791,
+        "train_prop": 0.00983,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 31,
+        "class_name": "Binding Effects",
+        "train_count": 588,
+        "val_count": 93,
+        "test_count": 126,
+        "total_count": 807,
+        "train_prop": 0.0098,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 32,
+        "class_name": "Headings",
+        "train_count": 587,
+        "val_count": 126,
+        "test_count": 220,
+        "total_count": 933,
+        "train_prop": 0.00978,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 33,
+        "class_name": "Fees",
+        "train_count": 578,
+        "val_count": 121,
+        "test_count": 89,
+        "total_count": 788,
+        "train_prop": 0.00963,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 34,
+        "class_name": "Representations",
+        "train_count": 569,
+        "val_count": 92,
+        "test_count": 94,
+        "total_count": 755,
+        "train_prop": 0.00948,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 35,
+        "class_name": "Definitions",
+        "train_count": 566,
+        "val_count": 93,
+        "test_count": 119,
+        "total_count": 778,
+        "train_prop": 0.00943,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 36,
+        "class_name": "Subsidiaries",
+        "train_count": 563,
+        "val_count": 95,
+        "test_count": 63,
+        "total_count": 721,
+        "train_prop": 0.00938,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 37,
+        "class_name": "Authority",
+        "train_count": 549,
+        "val_count": 69,
+        "test_count": 62,
+        "total_count": 680,
+        "train_prop": 0.00915,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 38,
+        "class_name": "Closings",
+        "train_count": 541,
+        "val_count": 80,
+        "test_count": 64,
+        "total_count": 685,
+        "train_prop": 0.00902,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 39,
+        "class_name": "Withholdings",
+        "train_count": 517,
+        "val_count": 87,
+        "test_count": 107,
+        "total_count": 711,
+        "train_prop": 0.00862,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 40,
+        "class_name": "Warranties",
+        "train_count": 499,
+        "val_count": 88,
+        "test_count": 97,
+        "total_count": 684,
+        "train_prop": 0.00832,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 41,
+        "class_name": "Miscellaneous",
+        "train_count": 479,
+        "val_count": 67,
+        "test_count": 79,
+        "total_count": 625,
+        "train_prop": 0.00798,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 42,
+        "class_name": "Intellectual Property",
+        "train_count": 473,
+        "val_count": 70,
+        "test_count": 64,
+        "total_count": 607,
+        "train_prop": 0.00788,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 43,
+        "class_name": "Cooperation",
+        "train_count": 469,
+        "val_count": 67,
+        "test_count": 82,
+        "total_count": 618,
+        "train_prop": 0.00782,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 44,
+        "class_name": "Effective Dates",
+        "train_count": 462,
+        "val_count": 76,
+        "test_count": 74,
+        "total_count": 612,
+        "train_prop": 0.0077,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 45,
+        "class_name": "Participations",
+        "train_count": 459,
+        "val_count": 81,
+        "test_count": 70,
+        "total_count": 610,
+        "train_prop": 0.00765,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 46,
+        "class_name": "Vesting",
+        "train_count": 451,
+        "val_count": 83,
+        "test_count": 87,
+        "total_count": 621,
+        "train_prop": 0.00752,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 47,
+        "class_name": "No Waivers",
+        "train_count": 445,
+        "val_count": 75,
+        "test_count": 84,
+        "total_count": 604,
+        "train_prop": 0.00742,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 48,
+        "class_name": "Successors",
+        "train_count": 444,
+        "val_count": 91,
+        "test_count": 96,
+        "total_count": 631,
+        "train_prop": 0.0074,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 49,
+        "class_name": "Consents",
+        "train_count": 444,
+        "val_count": 57,
+        "test_count": 81,
+        "total_count": 582,
+        "train_prop": 0.0074,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 50,
+        "class_name": "Capitalization",
+        "train_count": 434,
+        "val_count": 68,
+        "test_count": 63,
+        "total_count": 565,
+        "train_prop": 0.00723,
+        "tier": "Mid (16-50)"
+      },
+      {
+        "rank": 51,
+        "class_name": "Solvency",
+        "train_count": 419,
+        "val_count": 73,
+        "test_count": 66,
+        "total_count": 558,
+        "train_prop": 0.00698,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 52,
+        "class_name": "Organizations",
+        "train_count": 409,
+        "val_count": 68,
+        "test_count": 73,
+        "total_count": 550,
+        "train_prop": 0.00682,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 53,
+        "class_name": "Construction",
+        "train_count": 406,
+        "val_count": 69,
+        "test_count": 63,
+        "total_count": 538,
+        "train_prop": 0.00677,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 54,
+        "class_name": "Benefits",
+        "train_count": 397,
+        "val_count": 82,
+        "test_count": 81,
+        "total_count": 560,
+        "train_prop": 0.00662,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 55,
+        "class_name": "Brokers",
+        "train_count": 389,
+        "val_count": 68,
+        "test_count": 70,
+        "total_count": 527,
+        "train_prop": 0.00648,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 56,
+        "class_name": "Interpretations",
+        "train_count": 386,
+        "val_count": 79,
+        "test_count": 76,
+        "total_count": 541,
+        "train_prop": 0.00643,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 57,
+        "class_name": "Arbitration",
+        "train_count": 385,
+        "val_count": 68,
+        "test_count": 47,
+        "total_count": 500,
+        "train_prop": 0.00642,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 58,
+        "class_name": "Tax Withholdings",
+        "train_count": 380,
+        "val_count": 57,
+        "test_count": 75,
+        "total_count": 512,
+        "train_prop": 0.00633,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 59,
+        "class_name": "Interests",
+        "train_count": 366,
+        "val_count": 51,
+        "test_count": 42,
+        "total_count": 459,
+        "train_prop": 0.0061,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 60,
+        "class_name": "Non-Disparagement",
+        "train_count": 363,
+        "val_count": 55,
+        "test_count": 46,
+        "total_count": 464,
+        "train_prop": 0.00605,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 61,
+        "class_name": "Defined Terms",
+        "train_count": 354,
+        "val_count": 72,
+        "test_count": 56,
+        "total_count": 482,
+        "train_prop": 0.0059,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 62,
+        "class_name": "Duties",
+        "train_count": 354,
+        "val_count": 61,
+        "test_count": 58,
+        "total_count": 473,
+        "train_prop": 0.0059,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 63,
+        "class_name": "Transactions With Affiliates",
+        "train_count": 353,
+        "val_count": 76,
+        "test_count": 46,
+        "total_count": 475,
+        "train_prop": 0.00588,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 64,
+        "class_name": "Applicable Laws",
+        "train_count": 352,
+        "val_count": 69,
+        "test_count": 53,
+        "total_count": 474,
+        "train_prop": 0.00587,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 65,
+        "class_name": "Change In Control",
+        "train_count": 349,
+        "val_count": 43,
+        "test_count": 87,
+        "total_count": 479,
+        "train_prop": 0.00582,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 66,
+        "class_name": "Publicity",
+        "train_count": 345,
+        "val_count": 50,
+        "test_count": 42,
+        "total_count": 437,
+        "train_prop": 0.00575,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 67,
+        "class_name": "Vacations",
+        "train_count": 341,
+        "val_count": 53,
+        "test_count": 52,
+        "total_count": 446,
+        "train_prop": 0.00568,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 68,
+        "class_name": "No Defaults",
+        "train_count": 327,
+        "val_count": 56,
+        "test_count": 63,
+        "total_count": 446,
+        "train_prop": 0.00545,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 69,
+        "class_name": "Sales",
+        "train_count": 327,
+        "val_count": 49,
+        "test_count": 45,
+        "total_count": 421,
+        "train_prop": 0.00545,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 70,
+        "class_name": "Specific Performance",
+        "train_count": 326,
+        "val_count": 48,
+        "test_count": 43,
+        "total_count": 417,
+        "train_prop": 0.00543,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 71,
+        "class_name": "Adjustments",
+        "train_count": 326,
+        "val_count": 48,
+        "test_count": 88,
+        "total_count": 462,
+        "train_prop": 0.00543,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 72,
+        "class_name": "Erisa",
+        "train_count": 324,
+        "val_count": 57,
+        "test_count": 58,
+        "total_count": 439,
+        "train_prop": 0.0054,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 73,
+        "class_name": "Records",
+        "train_count": 323,
+        "val_count": 54,
+        "test_count": 31,
+        "total_count": 408,
+        "train_prop": 0.00538,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 74,
+        "class_name": "Titles",
+        "train_count": 317,
+        "val_count": 44,
+        "test_count": 45,
+        "total_count": 406,
+        "train_prop": 0.00528,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 75,
+        "class_name": "Liens",
+        "train_count": 313,
+        "val_count": 55,
+        "test_count": 49,
+        "total_count": 417,
+        "train_prop": 0.00522,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 76,
+        "class_name": "Employment",
+        "train_count": 308,
+        "val_count": 42,
+        "test_count": 47,
+        "total_count": 397,
+        "train_prop": 0.00513,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 77,
+        "class_name": "Integration",
+        "train_count": 304,
+        "val_count": 53,
+        "test_count": 59,
+        "total_count": 416,
+        "train_prop": 0.00507,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 78,
+        "class_name": "Forfeitures",
+        "train_count": 300,
+        "val_count": 46,
+        "test_count": 52,
+        "total_count": 398,
+        "train_prop": 0.005,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 79,
+        "class_name": "Death",
+        "train_count": 278,
+        "val_count": 51,
+        "test_count": 66,
+        "total_count": 395,
+        "train_prop": 0.00463,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 80,
+        "class_name": "Indemnity",
+        "train_count": 271,
+        "val_count": 47,
+        "test_count": 29,
+        "total_count": 347,
+        "train_prop": 0.00452,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 81,
+        "class_name": "Disability",
+        "train_count": 263,
+        "val_count": 43,
+        "test_count": 48,
+        "total_count": 354,
+        "train_prop": 0.00438,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 82,
+        "class_name": "Existence",
+        "train_count": 258,
+        "val_count": 37,
+        "test_count": 42,
+        "total_count": 337,
+        "train_prop": 0.0043,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 83,
+        "class_name": "Modifications",
+        "train_count": 255,
+        "val_count": 40,
+        "test_count": 55,
+        "total_count": 350,
+        "train_prop": 0.00425,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 84,
+        "class_name": "Agreements",
+        "train_count": 252,
+        "val_count": 22,
+        "test_count": 48,
+        "total_count": 322,
+        "train_prop": 0.0042,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 85,
+        "class_name": "Enforceability",
+        "train_count": 244,
+        "val_count": 57,
+        "test_count": 45,
+        "total_count": 346,
+        "train_prop": 0.00407,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 86,
+        "class_name": "Submission To Jurisdiction",
+        "train_count": 238,
+        "val_count": 42,
+        "test_count": 29,
+        "total_count": 309,
+        "train_prop": 0.00397,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 87,
+        "class_name": "Effectiveness",
+        "train_count": 229,
+        "val_count": 46,
+        "test_count": 31,
+        "total_count": 306,
+        "train_prop": 0.00382,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 88,
+        "class_name": "Jurisdictions",
+        "train_count": 202,
+        "val_count": 33,
+        "test_count": 29,
+        "total_count": 264,
+        "train_prop": 0.00337,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 89,
+        "class_name": "Enforcements",
+        "train_count": 201,
+        "val_count": 46,
+        "test_count": 42,
+        "total_count": 289,
+        "train_prop": 0.00335,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 90,
+        "class_name": "Positions",
+        "train_count": 190,
+        "val_count": 34,
+        "test_count": 32,
+        "total_count": 256,
+        "train_prop": 0.00317,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 91,
+        "class_name": "Approvals",
+        "train_count": 178,
+        "val_count": 26,
+        "test_count": 26,
+        "total_count": 230,
+        "train_prop": 0.00297,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 92,
+        "class_name": "Consent To Jurisdiction",
+        "train_count": 175,
+        "val_count": 35,
+        "test_count": 33,
+        "total_count": 243,
+        "train_prop": 0.00292,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 93,
+        "class_name": "Costs",
+        "train_count": 168,
+        "val_count": 22,
+        "test_count": 15,
+        "total_count": 205,
+        "train_prop": 0.0028,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 94,
+        "class_name": "Venues",
+        "train_count": 131,
+        "val_count": 19,
+        "test_count": 20,
+        "total_count": 170,
+        "train_prop": 0.00218,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 95,
+        "class_name": "Powers",
+        "train_count": 125,
+        "val_count": 15,
+        "test_count": 13,
+        "total_count": 153,
+        "train_prop": 0.00208,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 96,
+        "class_name": "Sanctions",
+        "train_count": 118,
+        "val_count": 24,
+        "test_count": 14,
+        "total_count": 156,
+        "train_prop": 0.00197,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 97,
+        "class_name": "Anti-Corruption Laws",
+        "train_count": 106,
+        "val_count": 26,
+        "test_count": 23,
+        "total_count": 155,
+        "train_prop": 0.00177,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 98,
+        "class_name": "Qualifications",
+        "train_count": 47,
+        "val_count": 8,
+        "test_count": 5,
+        "total_count": 60,
+        "train_prop": 0.00078,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 99,
+        "class_name": "Assigns",
+        "train_count": 31,
+        "val_count": 3,
+        "test_count": 4,
+        "total_count": 38,
+        "train_prop": 0.00052,
+        "tier": "Tail (51-100)"
+      },
+      {
+        "rank": 100,
+        "class_name": "Books",
+        "train_count": 23,
+        "val_count": 0,
+        "test_count": 2,
+        "total_count": 25,
+        "train_prop": 0.00038,
+        "tier": "Tail (51-100)"
+      }
+    ]
+  },
+  "token_lengths": {
+    "train": {
+      "count": 60000,
+      "mean": 114.96,
+      "std": 97.35,
+      "median": 86,
+      "min": 2,
+      "max": 1249,
+      "p25": 48,
+      "p75": 149,
+      "p90": 236,
+      "p95": 307,
+      "p99": 476,
+      "pct_le_128": 68.46,
+      "pct_le_256": 91.84,
+      "pct_le_512": 99.28
+    },
+    "validation": {
+      "count": 10000,
+      "mean": 113.67,
+      "std": 95.11,
+      "median": 85,
+      "min": 2,
+      "max": 914,
+      "p25": 47,
+      "p75": 150,
+      "p90": 236,
+      "p95": 299,
+      "p99": 464,
+      "pct_le_128": 68.83,
+      "pct_le_256": 92.07,
+      "pct_le_512": 99.4
+    },
+    "test": {
+      "count": 10000,
+      "mean": 108.8,
+      "std": 96.95,
+      "median": 78,
+      "min": 3,
+      "max": 1008,
+      "p25": 43,
+      "p75": 140,
+      "p90": 229,
+      "p95": 301,
+      "p99": 476,
+      "pct_le_128": 71.7,
+      "pct_le_256": 92.39,
+      "pct_le_512": 99.26
+    }
+  },
+  "vocabulary": {
+    "total_tokens_train": 6897339,
+    "unique_vocab_size_train": 18795,
+    "singleton_tokens": 5513,
+    "singleton_pct": 29.33,
+    "top_20_unigrams": [
+      {
+        "term": "shall",
+        "count": 94106
+      },
+      {
+        "term": "agreement",
+        "count": 80339
+      },
+      {
+        "term": "company",
+        "count": 56612
+      },
+      {
+        "term": "party",
+        "count": 33326
+      },
+      {
+        "term": "s",
+        "count": 32633
+      },
+      {
+        "term": "may",
+        "count": 29799
+      },
+      {
+        "term": "section",
+        "count": 23672
+      },
+      {
+        "term": "date",
+        "count": 23448
+      },
+      {
+        "term": "parties",
+        "count": 22914
+      },
+      {
+        "term": "will",
+        "count": 21515
+      },
+      {
+        "term": "borrower",
+        "count": 18592
+      },
+      {
+        "term": "executive",
+        "count": 18572
+      }
+    ],
+    "top_15_bigrams": [
+      {
+        "term": "agreement shall",
+        "count": 10641
+      },
+      {
+        "term": "set forth",
+        "count": 10472
+      },
+      {
+        "term": "administrative agent",
+        "count": 9725
+      },
+      {
+        "term": "transactions contemplated",
+        "count": 6301
+      },
+      {
+        "term": "shall deemed",
+        "count": 6253
+      },
+      {
+        "term": "parties hereto",
+        "count": 5818
+      },
+      {
+        "term": "company shall",
+        "count": 4611
+      },
+      {
+        "term": "loan documents",
+        "count": 4553
+      },
+      {
+        "term": "new york",
+        "count": 4509
+      },
+      {
+        "term": "material adverse",
+        "count": 4414
+      },
+      {
+        "term": "effective date",
+        "count": 4323
+      },
+      {
+        "term": "adverse effect",
+        "count": 4219
+      }
+    ],
+    "top_15_trigrams": [
+      {
+        "term": "material adverse effect",
+        "count": 4158
+      },
+      {
+        "term": "transactions contemplated hereby",
+        "count": 3311
+      },
+      {
+        "term": "including without limitation",
+        "count": 3303
+      },
+      {
+        "term": "full force effect",
+        "count": 2446
+      },
+      {
+        "term": "subject matter hereof",
+        "count": 2274
+      },
+      {
+        "term": "respect subject matter",
+        "count": 1987
+      },
+      {
+        "term": "shall governed construed",
+        "count": 1867
+      },
+      {
+        "term": "state new york",
+        "count": 1858
+      },
+      {
+        "term": "set forth section",
+        "count": 1851
+      },
+      {
+        "term": "reasonably expected material",
+        "count": 1732
+      },
+      {
+        "term": "expected material adverse",
+        "count": 1723
+      },
+      {
+        "term": "shares common stock",
+        "count": 1680
+      }
+    ]
+  },
+  "data_leakage_and_duplicates": {
+    "within_split_duplicates": {
+      "train_duplicates": 920,
+      "train_duplicate_pct": 1.53,
+      "val_duplicates": 32,
+      "val_duplicate_pct": 0.32,
+      "test_duplicates": 64,
+      "test_duplicate_pct": 0.64
+    },
+    "cross_split_leakage": {
+      "train_val_shared_unique_texts": 264,
+      "train_val_leakage_pct_of_val": 2.65,
+      "train_test_shared_unique_texts": 265,
+      "train_test_leakage_pct_of_test": 2.67,
+      "val_test_shared_unique_texts": 65,
+      "val_test_leakage_pct_of_test": 0.65
+    }
+  }
+}

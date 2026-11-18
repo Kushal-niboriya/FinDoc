@@ -1,0 +1,398 @@
+{
+  "total_clauses": 7,
+  "confident_clauses": 7,
+  "uncertain_clauses": 0,
+  "confidence_threshold_used": 0.5,
+  "contract_entities": {
+    "amounts": [
+      "$25,000,000"
+    ],
+    "dates": [],
+    "durations": [
+      "six (36) months"
+    ],
+    "parties": [
+      "Credit Facility and Commitments",
+      "the Effective Date",
+      "Repayment and Interest",
+      "the State of Delaware",
+      "Warranties",
+      "THIS AGREEMENT SHALL BE",
+      "City of New York"
+    ]
+  },
+  "clauses": [
+    {
+      "clause_id": 1,
+      "header": "Section 1.",
+      "text": "Section 1. Definitions and Accounting Terms.\nAs used in this Agreement, capitalized terms not otherwise defined herein shall have the meanings set forth in Schedule 1.1 attached hereto. All accounting terms shall be construed in accordance with GAAP.",
+      "analysis": {
+        "top_label": "Definitions",
+        "confidence": 0.7153,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Definitions",
+            "confidence": 0.7153,
+            "confidence_pct": 71.53
+          },
+          {
+            "label": "Defined Terms",
+            "confidence": 0.2379,
+            "confidence_pct": 23.79
+          },
+          {
+            "label": "Terms",
+            "confidence": 0.0266,
+            "confidence_pct": 2.66
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [],
+          "parties": []
+        },
+        "similar_clauses": [
+          {
+            "score": 0.4555,
+            "category": "Definitions",
+            "text_snippet": "Capitalized terms used in this Agreement and not otherwise defined herein shall have the meanings given to such terms in Exhibit A attached ..."
+          },
+          {
+            "score": 0.4483,
+            "category": "Definitions",
+            "text_snippet": "Capitalized terms that are not otherwise defined have the meanings set forth in the Agreement."
+          },
+          {
+            "score": 0.4444,
+            "category": "Definitions",
+            "text_snippet": "All the terms used herein which are not otherwise defined herein shall have the meanings set forth in the Loan Agreement."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 2,
+      "header": "Section 2.",
+      "text": "Section 2. Credit Facility and Commitments.\nSubject to the terms and conditions hereof, the Lender agrees to make revolving loans to the Borrower from time to time during the Availability Period in an aggregate principal amount not to exceed $25,000,000 at any one time outstanding.",
+      "analysis": {
+        "top_label": "General",
+        "confidence": 0.5512,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "General",
+            "confidence": 0.5512,
+            "confidence_pct": 55.12
+          },
+          {
+            "label": "Terms",
+            "confidence": 0.0535,
+            "confidence_pct": 5.35
+          },
+          {
+            "label": "Sales",
+            "confidence": 0.043,
+            "confidence_pct": 4.3
+          }
+        ],
+        "entities": {
+          "amounts": [
+            "$25,000,000"
+          ],
+          "dates": [],
+          "durations": [],
+          "parties": [
+            "Credit Facility and Commitments"
+          ]
+        },
+        "similar_clauses": [
+          {
+            "score": 0.2499,
+            "category": "General",
+            "text_snippet": "Subject to the terms and conditions set forth herein, at the request of any Account Party the Lenders agree at any time and from time to tim..."
+          },
+          {
+            "score": 0.2427,
+            "category": "General",
+            "text_snippet": "Subject to the terms and conditions set forth herein, each U.S. Lender agrees that any Domestic Borrower under the U.S. Tranche may from tim..."
+          },
+          {
+            "score": 0.219,
+            "category": "General",
+            "text_snippet": "Subject to the terms and conditions set forth herein, each Lender agrees that Borrower may request the Lenders to submit offers to make loan..."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 3,
+      "header": "Section 3.",
+      "text": "Section 3. Repayment and Interest.\nThe Borrower shall repay the outstanding principal balance of all Loans together with accrued and unpaid interest thereon within thirty-six (36) months following the Effective Date. Interest shall accrue on the daily outstanding principal balance at an annual rate equal to the SOFR plus 2.75% per annum.",
+      "analysis": {
+        "top_label": "Interests",
+        "confidence": 0.9808,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Interests",
+            "confidence": 0.9808,
+            "confidence_pct": 98.08
+          },
+          {
+            "label": "Payments",
+            "confidence": 0.0055,
+            "confidence_pct": 0.55
+          },
+          {
+            "label": "Terms",
+            "confidence": 0.0011,
+            "confidence_pct": 0.11
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [
+            "six (36) months"
+          ],
+          "parties": [
+            "the Effective Date",
+            "Repayment and Interest"
+          ]
+        },
+        "similar_clauses": [
+          {
+            "score": 0.3212,
+            "category": "Interests",
+            "text_snippet": "Except as provided in Section 1.3(b), the Daily Balance of Advances will bear interest at a variable per annum rate equal to Daily Three Mon..."
+          },
+          {
+            "score": 0.3209,
+            "category": "Interests",
+            "text_snippet": "The outstanding principal balance of the Line of Credit shall bear interest at the rate of One Month LIBOR plus 2.25% and the outstanding pr..."
+          },
+          {
+            "score": 0.2902,
+            "category": "Interests",
+            "text_snippet": "(a) The Borrower agrees to jointly and severally pay to the Administrative Agent on behalf of the Lenders interest on the daily outstanding ..."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 4,
+      "header": "Section 4.",
+      "text": "Section 4. Representations and Warranties.\nThe Borrower represents and warrants to the Lender that the Borrower is duly organized, validly existing and in good standing under the laws of the State of Delaware, has full corporate power to execute this Agreement, and the execution hereof does not violate any applicable law or contractual restriction.",
+      "analysis": {
+        "top_label": "Representations",
+        "confidence": 0.788,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Representations",
+            "confidence": 0.788,
+            "confidence_pct": 78.8
+          },
+          {
+            "label": "Warranties",
+            "confidence": 0.1398,
+            "confidence_pct": 13.98
+          },
+          {
+            "label": "Organizations",
+            "confidence": 0.0385,
+            "confidence_pct": 3.85
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [],
+          "parties": [
+            "the State of Delaware",
+            "Warranties"
+          ]
+        },
+        "similar_clauses": [
+          {
+            "score": 0.465,
+            "category": "Organizations",
+            "text_snippet": "Crestwood Midstream is a limited liability company duly organized, validly existing and in good standing under the laws of the State of Dela..."
+          },
+          {
+            "score": 0.4102,
+            "category": "Organizations",
+            "text_snippet": "It is a limited liability company duly formed or organized, validly existing and in good standing under the laws of the State of Delaware."
+          },
+          {
+            "score": 0.4085,
+            "category": "Organizations",
+            "text_snippet": "Purchaser is a corporation duly organized, validly existing and in good standing under the laws of the State of Utah, and has full corporate..."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 5,
+      "header": "Section 5.",
+      "text": "Section 5. Indemnification and Expenses.\nThe Borrower agrees to defend, indemnify, and hold harmless the Lender, its affiliates, and their respective directors, officers, employees, and agents from and against any and all claims, liabilities, losses, damages, costs, and reasonable attorney fees arising out of or relating to the execution or enforcement of this Agreement.",
+      "analysis": {
+        "top_label": "Indemnifications",
+        "confidence": 0.9716,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Indemnifications",
+            "confidence": 0.9716,
+            "confidence_pct": 97.16
+          },
+          {
+            "label": "Indemnity",
+            "confidence": 0.0237,
+            "confidence_pct": 2.37
+          },
+          {
+            "label": "Expenses",
+            "confidence": 0.0007,
+            "confidence_pct": 0.07
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [],
+          "parties": []
+        },
+        "similar_clauses": [
+          {
+            "score": 0.3411,
+            "category": "Indemnifications",
+            "text_snippet": "Contractor shall defend, indemnify, and hold harmless Client, its subsidiaries, affiliates, customers, clients, agents, officers, directors,..."
+          },
+          {
+            "score": 0.3331,
+            "category": "Indemnifications",
+            "text_snippet": "The Company agrees to indemnify and hold harmless the Investor and its Affiliates and their respective directors, officers, trustees, partne..."
+          },
+          {
+            "score": 0.3187,
+            "category": "Indemnifications",
+            "text_snippet": "The Company agrees to indemnify and hold harmless each Investor and its Affiliates and their respective directors, officers, trustees, membe..."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 6,
+      "header": "Section 6.",
+      "text": "Section 6. Governing Law and Jurisdiction.\nTHIS AGREEMENT SHALL BE GOVERNED BY, AND CONSTRUED IN ACCORDANCE WITH, THE SUBSTANTIVE LAWS OF THE STATE OF NEW YORK, WITHOUT REGARD TO CONFLICTS OF LAW PRINCIPLES. Each party irrevocably submits to the exclusive jurisdiction of the state and federal courts located in the Borough of Manhattan, City of New York.",
+      "analysis": {
+        "top_label": "Governing Laws",
+        "confidence": 0.9612,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Governing Laws",
+            "confidence": 0.9612,
+            "confidence_pct": 96.12
+          },
+          {
+            "label": "Applicable Laws",
+            "confidence": 0.0339,
+            "confidence_pct": 3.39
+          },
+          {
+            "label": "Jurisdictions",
+            "confidence": 0.0025,
+            "confidence_pct": 0.25
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [],
+          "parties": [
+            "THIS AGREEMENT SHALL BE",
+            "City of New York"
+          ]
+        },
+        "similar_clauses": [
+          {
+            "score": 0.6066,
+            "category": "Governing Laws",
+            "text_snippet": "This agreement shall be governed by and construed in accordance with the laws of the State of New York without regard to conflicts of law pr..."
+          },
+          {
+            "score": 0.5987,
+            "category": "Governing Laws",
+            "text_snippet": "This Agreement shall be governed by and construed in accordance with the substantive laws of the State of New York, without regard to the co..."
+          },
+          {
+            "score": 0.4718,
+            "category": "Governing Laws",
+            "text_snippet": "This Agreement shall be governed by and construed in accordance the laws of the State of New York."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": 7,
+      "header": "Section 7.",
+      "text": "Section 7. Notices and Communications.\nAll notices, requests, demands, and other communications under this Agreement shall be in writing and shall be deemed duly given when delivered by hand, sent by registered mail, or transmitted by electronic transmission to the addresses set forth on the signature pages hereto.",
+      "analysis": {
+        "top_label": "Notices",
+        "confidence": 0.997,
+        "status": "Confident",
+        "is_uncertain": false,
+        "top_3_predictions": [
+          {
+            "label": "Notices",
+            "confidence": 0.997,
+            "confidence_pct": 99.7
+          },
+          {
+            "label": "Miscellaneous",
+            "confidence": 0.0007,
+            "confidence_pct": 0.07
+          },
+          {
+            "label": "General",
+            "confidence": 0.0003,
+            "confidence_pct": 0.03
+          }
+        ],
+        "entities": {
+          "amounts": [],
+          "dates": [],
+          "durations": [],
+          "parties": []
+        },
+        "similar_clauses": [
+          {
+            "score": 0.3927,
+            "category": "Notices",
+            "text_snippet": "All notices, requests, demands and other communications to be given pursuant to this Agreement shall be in writing and shall be deemed to ha..."
+          },
+          {
+            "score": 0.3493,
+            "category": "Notices",
+            "text_snippet": "All notices, requests, consents and other communications under this Agreement shall be in writing and shall be delivered by hand, sent by fa..."
+          },
+          {
+            "score": 0.3411,
+            "category": "Notices",
+            "text_snippet": "All notices and other communications provided for hereunder to be effective must be in writing and either (i) hand delivered or delivered by..."
+          }
+        ]
+      }
+    }
+  ]
+}

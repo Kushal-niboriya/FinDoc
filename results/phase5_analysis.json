@@ -1,0 +1,506 @@
+{
+  "grand_comparison_table": [
+    {
+      "model_name": "Majority Class",
+      "architecture_family": "Rule-Based",
+      "parameters": 0,
+      "peak_vram": "0 MB",
+      "train_time": "0.01",
+      "inference_latency_ms": 0.001,
+      "test_macro_f1": 0.0011,
+      "test_micro_f1": 0.0582,
+      "test_accuracy": 0.0582,
+      "head_f1": 0.0073,
+      "mid_f1": 0.0,
+      "tail_f1": 0.0
+    },
+    {
+      "model_name": "Complement Naive Bayes",
+      "architecture_family": "Probabilistic",
+      "parameters": 2500000,
+      "peak_vram": "0 MB",
+      "train_time": "0.61",
+      "inference_latency_ms": 0.003,
+      "test_macro_f1": 0.6238,
+      "test_micro_f1": 0.7701,
+      "test_accuracy": 0.7701,
+      "head_f1": 0.8341,
+      "mid_f1": 0.6919,
+      "tail_f1": 0.5131
+    },
+    {
+      "model_name": "Logistic Regression",
+      "architecture_family": "Linear (L2)",
+      "parameters": 2500100,
+      "peak_vram": "0 MB",
+      "train_time": "154.33",
+      "inference_latency_ms": 0.005,
+      "test_macro_f1": 0.8164,
+      "test_micro_f1": 0.8732,
+      "test_accuracy": 0.8732,
+      "head_f1": 0.9117,
+      "mid_f1": 0.8494,
+      "tail_f1": 0.7646
+    },
+    {
+      "model_name": "Linear SVM",
+      "architecture_family": "Margin Linear",
+      "parameters": 2500100,
+      "peak_vram": "0 MB",
+      "train_time": "68.51",
+      "inference_latency_ms": 0.004,
+      "test_macro_f1": 0.8261,
+      "test_micro_f1": 0.879,
+      "test_accuracy": 0.879,
+      "head_f1": 0.9169,
+      "mid_f1": 0.8551,
+      "tail_f1": 0.7786
+    },
+    {
+      "model_name": "FastText EmbeddingBag",
+      "architecture_family": "Neural Bag",
+      "parameters": 2389860,
+      "peak_vram": "61.9 MB",
+      "train_time": "18.97",
+      "inference_latency_ms": 0.015,
+      "test_macro_f1": 0.7333,
+      "test_micro_f1": 0.8198,
+      "test_accuracy": 0.8198,
+      "head_f1": 0.8795,
+      "mid_f1": 0.771,
+      "tail_f1": 0.6631
+    },
+    {
+      "model_name": "TextCNN",
+      "architecture_family": "1D ConvNet",
+      "parameters": 2612452,
+      "peak_vram": "92.5 MB",
+      "train_time": "32.09",
+      "inference_latency_ms": 0.03,
+      "test_macro_f1": 0.7543,
+      "test_micro_f1": 0.8353,
+      "test_accuracy": 0.8353,
+      "head_f1": 0.8899,
+      "mid_f1": 0.7981,
+      "tail_f1": 0.683
+    },
+    {
+      "model_name": "Frozen SBERT (MiniLM) + LR",
+      "architecture_family": "Dense Embedding",
+      "parameters": 22713216,
+      "peak_vram": "366.3 MB",
+      "train_time": "62.74",
+      "inference_latency_ms": 0.527,
+      "test_macro_f1": 0.7052,
+      "test_micro_f1": 0.8066,
+      "test_accuracy": 0.8066,
+      "head_f1": 0.8671,
+      "mid_f1": 0.7536,
+      "tail_f1": 0.6228
+    },
+    {
+      "model_name": "DistilBERT (Fine-Tuned)",
+      "architecture_family": "Transformer",
+      "parameters": 67030372,
+      "peak_vram": "1.29 GB",
+      "train_time": "23.0 min",
+      "inference_latency_ms": 3.602,
+      "test_macro_f1": 0.771,
+      "test_micro_f1": 0.8596,
+      "test_accuracy": 0.8596,
+      "head_f1": 0.912,
+      "mid_f1": 0.8298,
+      "tail_f1": 0.6876
+    }
+  ],
+  "top_15_confused_pairs": [
+    {
+      "true_class": "Applicable Laws",
+      "pred_class": "Governing Laws",
+      "error_count": 35
+    },
+    {
+      "true_class": "Modifications",
+      "pred_class": "Amendments",
+      "error_count": 23
+    },
+    {
+      "true_class": "No Waivers",
+      "pred_class": "Waivers",
+      "error_count": 21
+    },
+    {
+      "true_class": "Integration",
+      "pred_class": "Entire Agreements",
+      "error_count": 19
+    },
+    {
+      "true_class": "Successors",
+      "pred_class": "Binding Effects",
+      "error_count": 16
+    },
+    {
+      "true_class": "Tax Withholdings",
+      "pred_class": "Withholdings",
+      "error_count": 16
+    },
+    {
+      "true_class": "Defined Terms",
+      "pred_class": "Definitions",
+      "error_count": 16
+    },
+    {
+      "true_class": "Definitions",
+      "pred_class": "Defined Terms",
+      "error_count": 14
+    },
+    {
+      "true_class": "General",
+      "pred_class": "Payments",
+      "error_count": 14
+    },
+    {
+      "true_class": "Taxes",
+      "pred_class": "Withholdings",
+      "error_count": 14
+    },
+    {
+      "true_class": "Authorizations",
+      "pred_class": "Authority",
+      "error_count": 14
+    },
+    {
+      "true_class": "Waivers",
+      "pred_class": "No Waivers",
+      "error_count": 13
+    },
+    {
+      "true_class": "Indemnity",
+      "pred_class": "Indemnifications",
+      "error_count": 13
+    },
+    {
+      "true_class": "Warranties",
+      "pred_class": "Survival",
+      "error_count": 13
+    },
+    {
+      "true_class": "Successors",
+      "pred_class": "Assignments",
+      "error_count": 11
+    }
+  ],
+  "hand_reviewed_errors_25": [
+    {
+      "sample_index": 2,
+      "true_class": "Interpretations",
+      "pred_class": "Definitions",
+      "confidence": 0.5736,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "For purposes of this Amendment, all terms used herein which are not otherwise defined herein, including but not limited to, those terms used in the recitals hereto, shall have the respective meanings assigned thereto in the Credit Agreement.",
+      "explanation": "Model misclassified 'Interpretations' as 'Definitions' with 57.4% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 3,
+      "true_class": "Capitalization",
+      "pred_class": "General",
+      "confidence": 0.2256,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "So long as this as this Note is outstanding, upon written request of the Holder, the Company shall furnish to the Holder the then-current number of common shares issued and outstanding, the then-current number of common shares authorized, and the then-current ...",
+      "explanation": "Model misclassified 'Capitalization' as 'General' with 22.6% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 11,
+      "true_class": "Binding Effects",
+      "pred_class": "Releases",
+      "confidence": 0.6791,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Employee has been advised, and hereby is advised in writing, to consult with an attorney of his choice regarding the form and content of this Confirming Release, and he represents that he has had a sufficient opportunity (and a full 21 days) to do so before ex...",
+      "explanation": "Model misclassified 'Binding Effects' as 'Releases' with 67.9% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 12,
+      "true_class": "Applicable Laws",
+      "pred_class": "Governing Laws",
+      "confidence": 0.8723,
+      "error_category": "Ambiguous / Overlapping Legal Taxonomy",
+      "snippet": "THIS AMENDMENT AND ANY CLAIMS, CONTROVERSY, DISPUTE OR CAUSES OF ACTION (WHETHER IN CONTRACT OR TORT OR OTHERWISE) BASED UPON, ARISING OUT OF OR RELATING TO THIS AMENDMENT SHALL BE CONSTRUED IN ACCORDANCE WITH AND GOVERNED BY THE LAWS OF THE STATE OF NEW YORK.",
+      "explanation": "Model misclassified 'Applicable Laws' as 'Governing Laws' with 87.2% confidence due to ambiguous / overlapping legal taxonomy."
+    },
+    {
+      "sample_index": 43,
+      "true_class": "Waivers",
+      "pred_class": "No Waivers",
+      "confidence": 0.665,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "The failure of either party to assert a right hereunder or to insist upon compliance with any term or condition of this Agreement shall not constitute a waiver of that right or excuse a similar subsequent failure to perform any such term or condition by the ot...",
+      "explanation": "Model misclassified 'Waivers' as 'No Waivers' with 66.5% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 45,
+      "true_class": "Authority",
+      "pred_class": "Arbitration",
+      "confidence": 0.8127,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "All disputes involving Arbitrable Claims shall be decided by a single arbitrator. The arbitrator shall be selected by mutual agreement of the parties within 30 days of the effective date of the notice initiating the arbitration. If the parties cannot agree on ...",
+      "explanation": "Model misclassified 'Authority' as 'Arbitration' with 81.3% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 54,
+      "true_class": "Miscellaneous",
+      "pred_class": "Amendments",
+      "confidence": 0.3316,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Sections 20(b) and 20(h) of each of the Partner Agreements is hereby amended by adding the phrase \u201c, Class\u00a0E-1 Common Units\u201d immediately after the term \u201cRetained P Units\u201d where such latter term appears in such Sections 20(b) and 20(h), respectively.",
+      "explanation": "Model misclassified 'Miscellaneous' as 'Amendments' with 33.2% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 62,
+      "true_class": "Consents",
+      "pred_class": "No Conflicts",
+      "confidence": 0.4734,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "The execution and delivery by Buyer of this Agreement, Buyer\u2019s performance hereunder, and the consummation of the transactions contemplated hereby do not require any Consent under any Contract to which Buyer is a party or by which Buyer\u2019s assets are bound or a...",
+      "explanation": "Model misclassified 'Consents' as 'No Conflicts' with 47.3% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 78,
+      "true_class": "Terminations",
+      "pred_class": "Survival",
+      "confidence": 0.2038,
+      "error_category": "Length & Structural Complexity / Buried Lead",
+      "snippet": "Upon consummation of an IPO or a Sale of the Company, this Agreement will be terminated (and replaced, in the case of an IPO, by a suitable replacement stockholders\u2019 agreement as reasonably determined by the Board of Directors immediately prior to the IPO) and...",
+      "explanation": "Model misclassified 'Terminations' as 'Survival' with 20.4% confidence due to length & structural complexity / buried lead."
+    },
+    {
+      "sample_index": 79,
+      "true_class": "Amendments",
+      "pred_class": "Modifications",
+      "confidence": 0.6876,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "This Agreement may not be modified or changed except by an instrument or instruments in writing executed by the parties hereto.",
+      "explanation": "Model misclassified 'Amendments' as 'Modifications' with 68.8% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 87,
+      "true_class": "Disclosures",
+      "pred_class": "Representations",
+      "confidence": 0.2875,
+      "error_category": "Length & Structural Complexity / Buried Lead",
+      "snippet": "A true and correct copy of the rent roll (the \u201c Closing Rent Roll \u201d) for the Property as of January\u00a018, 2019 is attached hereto as Schedule \u00a04.7(B) . The Closing Rent Roll constitutes a true, correct, and complete in all material respects list of each and ever...",
+      "explanation": "Model misclassified 'Disclosures' as 'Representations' with 28.8% confidence due to length & structural complexity / buried lead."
+    },
+    {
+      "sample_index": 95,
+      "true_class": "General",
+      "pred_class": "Terms",
+      "confidence": 0.4742,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Except as otherwise provided below or in the Award Document, all Options will become exercisable at the rate of 20% per year on each of the first five anniversaries of the Grant Date and will expire and terminate at 4:00\u00a0p.m. Eastern Time on the tenth annivers...",
+      "explanation": "Model misclassified 'General' as 'Terms' with 47.4% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 107,
+      "true_class": "General",
+      "pred_class": "Vesting",
+      "confidence": 0.8223,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Subject to the other provisions of this Section 2, the PSUs shall vest as set forth on Schedule 1 to this Agreement, based on the achievement of the performance goal for the performance period set forth on Schedule 1, as certified by the Compensation Committee...",
+      "explanation": "Model misclassified 'General' as 'Vesting' with 82.2% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 126,
+      "true_class": "Consent To Jurisdiction",
+      "pred_class": "Submission To Jurisdiction",
+      "confidence": 0.3229,
+      "error_category": "Length & Structural Complexity / Buried Lead",
+      "snippet": "To the fullest extent permitted by applicable Law, each party hereto (i)\u00a0agrees that any claim, action or proceeding by such party seeking any relief whatsoever arising out of, relating to or in connection with, this Agreement or the transactions contemplated ...",
+      "explanation": "Model misclassified 'Consent To Jurisdiction' as 'Submission To Jurisdiction' with 32.3% confidence due to length & structural complexity / buried lead."
+    },
+    {
+      "sample_index": 128,
+      "true_class": "Disability",
+      "pred_class": "Benefits",
+      "confidence": 0.3927,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Should Executive become incapacitated due to a Disability, Executive shall continue to receive the Base Salary and other benefits up until such time as the Company terminates this Agreement pursuant to this Section\u00a06(b). In the event of termination pursuant to...",
+      "explanation": "Model misclassified 'Disability' as 'Benefits' with 39.3% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 150,
+      "true_class": "Duties",
+      "pred_class": "Positions",
+      "confidence": 0.2119,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Executive shall report exclusively and directly to the Chief Executive Officer of the Parent Company (\u201c CEO \u201d), and to the Boards of Directors of the Companies (the \u201c Companies Boards \u201d).",
+      "explanation": "Model misclassified 'Duties' as 'Positions' with 21.2% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 160,
+      "true_class": "General",
+      "pred_class": "Duties",
+      "confidence": 0.6652,
+      "error_category": "Length & Structural Complexity / Buried Lead",
+      "snippet": "Executive shall devote a substantial majority of his business time, attention, skill, and effort to the performance of his duties under this Agreement. Executive may, to the extent such activities do not impair the performance of his duties to Playa Management...",
+      "explanation": "Model misclassified 'General' as 'Duties' with 66.5% confidence due to length & structural complexity / buried lead."
+    },
+    {
+      "sample_index": 174,
+      "true_class": "Miscellaneous",
+      "pred_class": "Terminations",
+      "confidence": 0.4243,
+      "error_category": "Length & Structural Complexity / Buried Lead",
+      "snippet": "For the avoidance of doubt, the benefits payable pursuant to Sections 8(b) through (c)\u00a0are mutually exclusive and not cumulative. All lump sum payments provided in this Section\u00a08 shall be made no later than the 60 th day following your termination of employmen...",
+      "explanation": "Model misclassified 'Miscellaneous' as 'Terminations' with 42.4% confidence due to length & structural complexity / buried lead."
+    },
+    {
+      "sample_index": 179,
+      "true_class": "Expenses",
+      "pred_class": "Taxes",
+      "confidence": 0.2609,
+      "error_category": "Length & Structural Complexity / Buried Lead",
+      "snippet": "Any Property Costs that are not reflected in the adjustments to the Purchase Price following the final adjustment pursuant to Section 9.4(b) shall be treated as follows: (a) all Property Costs for which Seller is responsible under Section 2.4 shall be the sole...",
+      "explanation": "Model misclassified 'Expenses' as 'Taxes' with 26.1% confidence due to length & structural complexity / buried lead."
+    },
+    {
+      "sample_index": 198,
+      "true_class": "Releases",
+      "pred_class": "Effective Dates",
+      "confidence": 0.2461,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Upon re-execution, the date of such re-execution will be the date on which you sign this Agreement for the purposes of this Agreement, including without limitation, for the purposes of the Release set forth in Section 7.",
+      "explanation": "Model misclassified 'Releases' as 'Effective Dates' with 24.6% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 203,
+      "true_class": "Miscellaneous",
+      "pred_class": "Enforceability",
+      "confidence": 0.2344,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Each of the parties hereto agrees that this Commitment Letter is a binding and enforceable agreement (subject to the effects of bankruptcy, insolvency, fraudulent transfer, fraudulent conveyance, reorganization and other similar laws relating to or affecting c...",
+      "explanation": "Model misclassified 'Miscellaneous' as 'Enforceability' with 23.4% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 204,
+      "true_class": "Interpretations",
+      "pred_class": "General",
+      "confidence": 0.1519,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Any reference in this Agreement to Section\u00a0409A of the Code will also include any proposed, temporary or final regulations, or any other guidance, promulgated with respect to such Section by the U.S. Department of the Treasury or the Internal Revenue Service.",
+      "explanation": "Model misclassified 'Interpretations' as 'General' with 15.2% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 207,
+      "true_class": "Compliance With Laws",
+      "pred_class": "Waivers",
+      "confidence": 0.1311,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Perry acknowledges that the terms of this Agreement fully comply with applicable law including but not limited to the OWBPA, as amended, and implementing regulations, and that said terms therefore are final and binding. Specifically, Perry acknowledges that th...",
+      "explanation": "Model misclassified 'Compliance With Laws' as 'Waivers' with 13.1% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 208,
+      "true_class": "Duties",
+      "pred_class": "Amendments",
+      "confidence": 0.8833,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "No provision of this Agreement affecting the Administrative Agent in its capacity as such shall be amended, modified or waived without the consent of the Administrative Agent. The Administrative Agent Fee Letter may be amended or modified by the Administrative...",
+      "explanation": "Model misclassified 'Duties' as 'Amendments' with 88.3% confidence due to subtle definitional / lexical ambiguity."
+    },
+    {
+      "sample_index": 220,
+      "true_class": "General",
+      "pred_class": "Indemnifications",
+      "confidence": 0.4386,
+      "error_category": "Subtle Definitional / Lexical Ambiguity",
+      "snippet": "Subject to the provisions set forth in Article IV, the Company shall indemnify, and advance Expenses to, Indemnitee to the fullest extent permitted by applicable law in effect on the date hereof and to such greater extent as applicable law may hereafter from t...",
+      "explanation": "Model misclassified 'General' as 'Indemnifications' with 43.9% confidence due to subtle definitional / lexical ambiguity."
+    }
+  ],
+  "abstention_threshold_study": {
+    "thresholds": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "coverage_pct": [
+      99.54,
+      98.72,
+      97.69,
+      96.34,
+      94.9,
+      93.15,
+      91.77,
+      89.9,
+      87.45,
+      84.86,
+      82.15,
+      78.94,
+      75.79,
+      72.15,
+      67.58,
+      62.26,
+      54.59,
+      42.41
+    ],
+    "macro_f1": [
+      0.8196,
+      0.8261,
+      0.8296,
+      0.835,
+      0.8408,
+      0.8448,
+      0.8485,
+      0.8541,
+      0.8667,
+      0.8717,
+      0.8764,
+      0.8811,
+      0.8823,
+      0.8821,
+      0.8878,
+      0.8874,
+      0.8869,
+      0.864
+    ],
+    "accuracy": [
+      0.8761,
+      0.8813,
+      0.8857,
+      0.8913,
+      0.8974,
+      0.9042,
+      0.9087,
+      0.9154,
+      0.9245,
+      0.9319,
+      0.9391,
+      0.9465,
+      0.9522,
+      0.9577,
+      0.9658,
+      0.9706,
+      0.9766,
+      0.9823
+    ],
+    "recommended_threshold": 0.5,
+    "recommended_coverage_pct": 87.45,
+    "recommended_macro_f1": 0.8667,
+    "recommended_accuracy": 0.9245
+  }
+}

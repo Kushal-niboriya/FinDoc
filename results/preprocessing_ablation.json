@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "model": "TF-IDF (15k max_features, ngram 1-2, sublinear_tf) + LogisticRegression(C=1.0, max_iter=150)",
+    "train_sample_size": 20000,
+    "val_sample_size": 10000,
+    "random_seed": 42
+  },
+  "configurations": [
+    {
+      "config_name": "1. Raw Baseline",
+      "vocab_size": 12589,
+      "mean_token_length": 114.44,
+      "median_token_length": 86.0,
+      "macro_f1": 0.7074,
+      "micro_f1": 0.8139,
+      "accuracy": 0.8139,
+      "prep_time_sec": 0.84,
+      "fit_time_sec": 31.16,
+      "total_time_sec": 33.65,
+      "train_samples_used": 20000,
+      "dedup_removed": 0
+    },
+    {
+      "config_name": "2. Trad: Stopwords",
+      "vocab_size": 12342,
+      "mean_token_length": 55.69,
+      "median_token_length": 42.0,
+      "macro_f1": 0.7072,
+      "micro_f1": 0.812,
+      "accuracy": 0.812,
+      "prep_time_sec": 177.28,
+      "fit_time_sec": 21.0,
+      "total_time_sec": 199.23,
+      "train_samples_used": 20000,
+      "dedup_removed": 0
+    },
+    {
+      "config_name": "3. Trad: Stopwords + Lemmatization",
+      "vocab_size": 10122,
+      "mean_token_length": 55.69,
+      "median_token_length": 42.0,
+      "macro_f1": 0.7085,
+      "micro_f1": 0.8133,
+      "accuracy": 0.8133,
+      "prep_time_sec": 173.39,
+      "fit_time_sec": 21.62,
+      "total_time_sec": 195.91,
+      "train_samples_used": 20000,
+      "dedup_removed": 0
+    },
+    {
+      "config_name": "4. Spec: Masking Only",
+      "vocab_size": 12507,
+      "mean_token_length": 114.12,
+      "median_token_length": 86.0,
+      "macro_f1": 0.7072,
+      "micro_f1": 0.8137,
+      "accuracy": 0.8137,
+      "prep_time_sec": 5.79,
+      "fit_time_sec": 31.36,
+      "total_time_sec": 38.8,
+      "train_samples_used": 20000,
+      "dedup_removed": 0
+    },
+    {
+      "config_name": "5. Spec: Full Legal",
+      "vocab_size": 12402,
+      "mean_token_length": 112.61,
+      "median_token_length": 85.0,
+      "macro_f1": 0.7083,
+      "micro_f1": 0.8142,
+      "accuracy": 0.8142,
+      "prep_time_sec": 7.81,
+      "fit_time_sec": 31.36,
+      "total_time_sec": 40.82,
+      "train_samples_used": 20000,
+      "dedup_removed": 0
+    },
+    {
+      "config_name": "6. Spec: Full + Dedup",
+      "vocab_size": 12402,
+      "mean_token_length": 112.67,
+      "median_token_length": 85.0,
+      "macro_f1": 0.7086,
+      "micro_f1": 0.8147,
+      "accuracy": 0.8147,
+      "prep_time_sec": 5.8,
+      "fit_time_sec": 29.52,
+      "total_time_sec": 36.98,
+      "train_samples_used": 19755,
+      "dedup_removed": 245
+    }
+  ],
+  "best_configuration": {
+    "config_name": "6. Spec: Full + Dedup",
+    "vocab_size": 12402,
+    "mean_token_length": 112.67,
+    "median_token_length": 85.0,
+    "macro_f1": 0.7086,
+    "micro_f1": 0.8147,
+    "accuracy": 0.8147,
+    "prep_time_sec": 5.8,
+    "fit_time_sec": 29.52,
+    "total_time_sec": 36.98,
+    "train_samples_used": 19755,
+    "dedup_removed": 245
+  }
+}

@@ -1,0 +1,28 @@
+# Core PyTorch with CUDA 12.1
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+torchaudio==2.5.1+cu121
+
+# NLP, Transformers, and Datasets
+transformers==4.48.3
+tokenizers==0.21.4
+sentence-transformers==3.4.1
+datasets==3.2.0
+accelerate==1.2.1
+huggingface_hub==0.36.2
+
+# Classical ML & Evaluation
+scikit-learn==1.9.1
+scipy==1.18.1
+numpy==2.5.4
+pandas==3.1.1
+rank-bm25==0.2.2
+
+# Text Processing & Linguistics
+spacy==3.8.18
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+# Visualization & EDA
+matplotlib==3.11.2
+wordcloud==1.9.6
